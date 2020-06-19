@@ -1,0 +1,22 @@
+{
+  "name": "screenshot-ocr",
+  "version": "1.0.0",
+  "description": "a chrome extension that convert screenshots to text.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mypridelife/screenshot-ocr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mypridelife/screenshot-ocr/issues"
+  },
+  "homepage": "https://github.com/mypridelife/screenshot-ocr#readme",
+  "dependencies": {
+    "tesseract.js": "^2.1.1"
+  }
+}
