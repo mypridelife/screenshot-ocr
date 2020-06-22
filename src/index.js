@@ -67,6 +67,11 @@ async function recognizeFile(file) {
 
 const inputFile = document.getElementById('input-file')
 // inputFile.onchange = recognizeFile((window.lastFile = this.files[0]))
-inputFile.onchange = function (res) {
-  console.log(res)
+inputFile.onchange = function () {
+  recognizeFile(inputFile.files[0])
+}
+const langsel = document.getElementById('langsel')
+
+langsel.onchange = function () {
+  inputFile.files[0] && recognizeFile(inputFile.files[0])
 }

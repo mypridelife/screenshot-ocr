@@ -15,7 +15,11 @@
       }
 
       .status {
-        min-width: 250px;
+        min-width: 150px;
+      }
+
+      #input-file {
+        margin-top: 20px;
       }
 
       #log {
@@ -43,8 +47,8 @@
   </head>
 
   <body>
-    <select id="langsel" onchange="window.lastFile && recognizeFile(window.lastFile)">
-      <option value="eng+chi_sim"> Default(English+Chinese) </option>
+    <select id="langsel">
+      <option value="eng+chi_sim" selected> Default(English+Chinese) </option>
       <option value="afr"> Afrikaans </option>
       <option value="ara"> Arabic </option>
       <option value="aze"> Azerbaijani </option>
@@ -59,7 +63,7 @@
       <option value="dan"> Danish </option>
       <option value="deu"> German </option>
       <option value="ell"> Greek </option>
-      <option value="eng" selected> English </option>
+      <option value="eng"> English </option>
       <option value="enm"> English (Old) </option>
       <option value="meme"> Internet Meme </option>
       <option value="epo"> Esperanto </option>
@@ -113,8 +117,7 @@
       <option value="vie"> Vietnamese </option>
     </select>
 
-    <!-- <button onclick="recognizeFile('../../tests/assets/images/simple.png')">Sample Image</button> -->
-    <input type="file" class="input-file" />
+    <input type="file" id="input-file" />
     <div id="log"></div>
 
     <script src="./index.js"></script>
